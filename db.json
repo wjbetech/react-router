@@ -1,0 +1,58 @@
+{
+  "monsters": [
+    {
+      "name": "Bloodveld",
+      "status": "Aggressive",
+      "combat_level": 76,
+      "examine_info": "A vampyric creature that inhabits the Slayer Tower.",
+      "slayer_level_required": 50,
+      "exp_per_monster": 120,
+      "category": "Demonic"
+    },
+    {
+      "name": "Gargoyle",
+      "status": "Aggressive",
+      "combat_level": 111,
+      "examine_info": "A stone creature that guards the Slayer Tower.",
+      "slayer_level_required": 75,
+      "exp_per_monster": 105,
+      "category": "Demonic"
+    },
+    {
+      "name": "Kraken",
+      "status": "Aggressive",
+      "combat_level": 291,
+      "examine_info": "A sea monster found in the Kraken Cove.",
+      "slayer_level_required": 87,
+      "exp_per_monster": 350,
+      "category": "Kraken"
+    },
+    {
+      "name": "Abyssal Demon",
+      "status": "Aggressive",
+      "combat_level": 124,
+      "examine_info": "A demonic denizen of the Abyss.",
+      "slayer_level_required": 85,
+      "exp_per_monster": 150,
+      "category": "Demonic"
+    },
+    {
+      "name": "Jelly",
+      "status": "Aggressive",
+      "combat_level": 78,
+      "examine_info": "A translucent, gelatinous creature.",
+      "slayer_level_required": 52,
+      "exp_per_monster": 75,
+      "category": "Demonic"
+    },
+    {
+      "name": "Dust Devil",
+      "status": "Aggressive",
+      "combat_level": 93,
+      "examine_info": "A whirlwind of dust and sand.",
+      "slayer_level_required": 65,
+      "exp_per_monster": 105,
+      "category": "Demonic"
+    }
+  ]
+}

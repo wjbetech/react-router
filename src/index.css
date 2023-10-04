@@ -1,0 +1,82 @@
+:root {
+  font-size: 1.35rem;
+  letter-spacing: -0.05rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: rgb(56, 59, 62);
+  color: #eeeeee;
+}
+
+nav {
+  display: flex;
+  margin: 0 auto 60px;
+  padding: 15px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+
+  & a {
+    text-decoration: none;
+    color: #eeeeee;
+  }
+
+  & a:hover {
+    color: #afafaf;
+  }
+
+  & a.active {
+    color: gold;
+  }
+
+  & .links {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.container {
+  padding: 15px 100px;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+.Monster {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  margin: 20px 0 20px 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 75%;
+  max-width: 450px;
+
+  & .monster-name {
+    margin-bottom: 5px;
+  }
+
+  & .monster-divider {
+    margin: 10px auto;
+  }
+}
+
+.Monster:hover {
+  transform: scale(1.025);
+}
