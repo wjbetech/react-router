@@ -1,15 +1,22 @@
-import React from 'react'
-import { useParams } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { useParams, useHistory } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Article() {
 
   const { monster } = useParams();
-  const url = `http://localhost:3000/monsters/` + monster
+  const url = `http://localhost:3000/monsters/` + monster;
   const { data: m, isPending, error } = useFetch(url);
+  const history = useHistory();
 
-  console.log(m);
+  useEffect(() => {
+    if (error) {
+      setTimeout(() => {
+        history.push("/monsters");
+      }, 3000)
+    }
+  }, [error, history])
 
   return (
     <div className="Article">

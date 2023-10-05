@@ -4,7 +4,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Monsters from "./pages/Monsters";
 import Article from "./pages/Article";
-import { BrowserRouter, Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <div className="container">
           {/* deploy switch to only render one */}
           <Switch>
+
             {/* route to pages */}
             <Route exact path="/">
               <Home />
@@ -30,12 +31,19 @@ function App() {
             <Route exact path="/monsters">
               <Monsters />
             </Route>
+
             {/* for loading in items, use a name */}
             {/* that works for the item, e.g. id, */}
             {/* monster, name, number, etc */}
             <Route path="/monsters/:monster">
               <Article />
             </Route>
+
+            {/* error pathing / 404 */}
+            <Route path="*">
+              <Redirect to="/" />
+            </Route>
+
           </Switch>
         </div>
 
