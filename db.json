@@ -1,6 +1,7 @@
 {
   "monsters": [
     {
+      "id": 1,
       "name": "Bloodveld",
       "status": "Aggressive",
       "combat_level": 76,
@@ -10,6 +11,7 @@
       "category": "Demonic"
     },
     {
+      "id": 2,
       "name": "Gargoyle",
       "status": "Aggressive",
       "combat_level": 111,
@@ -19,6 +21,7 @@
       "category": "Demonic"
     },
     {
+      "id": 3,
       "name": "Kraken",
       "status": "Aggressive",
       "combat_level": 291,
@@ -28,6 +31,7 @@
       "category": "Kraken"
     },
     {
+      "id": 4,
       "name": "Abyssal Demon",
       "status": "Aggressive",
       "combat_level": 124,
@@ -37,6 +41,7 @@
       "category": "Demonic"
     },
     {
+      "id": 5,
       "name": "Jelly",
       "status": "Aggressive",
       "combat_level": 78,
@@ -46,6 +51,7 @@
       "category": "Demonic"
     },
     {
+      "id": 6,
       "name": "Dust Devil",
       "status": "Aggressive",
       "combat_level": 93,

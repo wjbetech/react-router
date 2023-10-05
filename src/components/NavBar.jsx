@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav>
       {/* Link tags don't force re-render */}
       <Link to="/">
-        <h1>Articles</h1>
+        <h1>Monster Articles</h1>
       </Link>
       {/* Link tags render as <a> tags */}
       <div className="links">

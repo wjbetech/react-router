@@ -46,7 +46,9 @@ nav {
 }
 
 .container {
-  padding: 15px 100px;
+  padding: 15px 0;
+  width: 70%;
+  margin: auto;
 }
 
 h2 {
@@ -62,11 +64,9 @@ p {
   border: 2px solid white;
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-  margin: 20px 0 20px 0;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
   width: 75%;
-  max-width: 450px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 
   & .monster-name {
     margin-bottom: 5px;
@@ -75,8 +75,59 @@ p {
   & .monster-divider {
     margin: 10px auto;
   }
+
+  & .monster-button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin: 7.5px 0;
+    width: 100%;
+  }
+
+  & .monster-button:hover {
+    transform: scale(1.025);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.5)
+  }
 }
 
-.Monster:hover {
-  transform: scale(1.025);
+.cards-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.Article {
+  width: 60%;
+  margin: auto;
+  border: 2px solid white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+
+  & .article-name {
+    font-size: 2rem;
+  }
+
+  & .article-divider {
+    margin: 1.5rem 0;
+  } 
+
+  & .article-button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin: 7.5px 0;
+    width: 100%;
+  }
+
+  & .article-button:hover {
+    transform: scale(1.025);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.5)
+  }
 }

@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Monsters from "./pages/Monsters";
+import Article from "./pages/Article";
 import { BrowserRouter, Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
@@ -28,6 +29,12 @@ function App() {
             </Route>
             <Route exact path="/monsters">
               <Monsters />
+            </Route>
+            {/* for loading in items, use a name */}
+            {/* that works for the item, e.g. id, */}
+            {/* monster, name, number, etc */}
+            <Route path="/monsters/:monster">
+              <Article />
             </Route>
           </Switch>
         </div>
